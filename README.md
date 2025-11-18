@@ -89,24 +89,27 @@ This project uses the **Engagement** label and converts it to **Binary (Engaged 
 ## 📁 Project Structure
 
 ```bash
-student-engagement/
+Student-Engagement-Detection/
 ├── data/
-│ ├── daisee_videos/
-│ └── features_extracted/
+│   └── daisee_subset/
+├── features/
+│   └── merged_results.csv
 ├── models/
-│ ├── final_xgb_model.pkl
-│ ├── random_forest.pkl
-│ └── scaler.pkl
+│   ├── GradientBoosting.pkl
+│   ├── LinearRegression.pkl
+│   ├── RandomForest.pkl
+│   └── scaler.pkl
 ├── notebooks/
-│ ├── feature_extraction.ipynb
-│ ├── ml_training.ipynb
-│ ├── dl_training.ipynb
+│   ├── feature_extraction.ipynb
+│   ├── ml_training.ipynb
+│   └── dl_training.ipynb
 ├── src/
-│ ├── preprocess.py
-│ ├── train_ml.py
-│ ├── train_dl.py
-│ └── predict_video.py
-└── README.md
+│   ├── preprocess.py
+│   ├── train_ml.py
+│   ├── train_dl.py
+│   └── predict.py
+├── README.md
+└── requirements.txt
 ```
 ---
 
@@ -130,7 +133,7 @@ pip install -r requirements.txt
 
 - ML Best Performance: XGBoost
 
-- Accuracy: 93%
+- Accuracy: 96%
 
 - F1 Score: 0.96
 
@@ -172,8 +175,3 @@ pip install -r requirements.txt
 
 ## ⭐ If you found this helpful, leave a star!
 ```
-If you want, I can also:  
-✅ Create a professional **Project Logo**  
-✅ Create a **Project Poster**  
-✅ Make a **GitHub project description**  
-Just tell me!
